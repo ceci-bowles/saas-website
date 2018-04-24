@@ -1,0 +1,62 @@
+html {
+  font-family: "Yantramanav", sans-serif;
+}
+
+header, footer {
+  background-color: #263437;
+}
+
+ul, footer {
+  color: #F5F2ED;
+}
+
+a:hover {
+  color: #D0A330;
+}
+
+.banner {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #517955;
+}
+
+.btn {
+  background-color: #D0A330;
+  border-color: #D0A330;
+}
+
+.btn-green {
+  background-color: #6F9E74;
+  border-color: #6F9E74;
+}
+
+.btn-green:hover {
+
+}
+
+.brown {
+  background-color: #F5F2ED;
+  border-radius: 15px;
+}
+
+.green {
+  color: #517955;
+}
+
+.light-green {
+  background-color: #D4EBB7;
+  border-radius: 15px;
+}
+
+.width {
+  max-width: 15rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .header-float {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
