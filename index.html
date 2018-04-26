@@ -34,17 +34,17 @@
         <li class="pad-t-1-2 pad-b-1-2"><a href="sign-up.html" class="text-upper push gutter-1-2">about</a></li>
       </ul>
     </nav>
-    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4" role="navigation" id="nav">
+    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4" role="navigation" id="nav" tabindex="0">
       <ul class="list-group-inline">
         <li><a href="tour.html" class="text-upper push gutter-1-2">platform</a></li>
         <li><a href="pricing.html" class="text-upper push gutter-1-2">pricing</a></li>
         <li><a href="#about" class="text-upper push gutter-1-2">about</a></li>
-        <li><a href="sign-up.html" class="btn btn-green text-upper gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
+        <li><a href="sign-up.html" class="btn btn-green text-upper bold gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="island-1-2" role="main" id="main">
+  <main class="island-1-2" role="main" id="main" tabindex="0">
     <section class="island-1-2">
       <div class="relative">
         <div class="embed embed-24by10">
@@ -83,12 +83,23 @@
         <div class="embed embed-24by10">
           <img class="embed-item" src="images/coffee.png" alt="feilds">
         </div>
-        <div class="banner island unit header-float xs-1 s-1 m-1 l-1-2 xl-1-2 text-center">
+        <div class="banner island header-float text-center">
           <h2 class="zetta push-0 text-upper">choose for you</h2>
           <p>Get the perfect platform plan for your business to grow.</p>
           <a href="pricing.html" class="bold btn text-upper">start now</a>
         </div>
       </div>
+    </section>
+    <section>
+      <form action="#" method="post">
+        <div class="push unit xs-1 s-1 m-1 l-1 gutter-1-2 text-center">
+          <label for="email" class="text-upper text-center bold giga green">Sign up by email</label>
+          <input id="email" class="w-1-2 ib" type="email" placeholder="me@me.com" aria-label="enter email" name="email" required>
+        </div>
+        <div class="unit xs-1 s-1 m-1 l-1 text-center pad-b-1-2">
+          <button class="btn bold white text-upper" type="submit">Send message</button>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="grid" role="contentinfo">

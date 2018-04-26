@@ -17,12 +17,13 @@ a:hover {
 
 .banner {
   background-color: rgba(255, 255, 255, .75);
-  color: #517955;
+  color: #1b4e20;
 }
 
 .btn {
   background-color: #d0a330;
   border-color: #d0a330;
+  color: #263437;
 }
 
 .btn:hover {
@@ -30,15 +31,16 @@ a:hover {
   border-color: #6f9e74;
 }
 
-.btn-green {
-  background-color: #6f9e74;
-  border-color: #6f9e74;
+.btn.btn-green {
+  background-color: #fff;
+  border-color: #fff;
+  color: #263437;
 }
 
 .btn-green:hover {
   background-color: #d4ebb7;
   border-color: #d4ebb7;
-  color: #6f9e74;
+  color: #1b4e20;
 }
 
 .brown {
@@ -47,7 +49,7 @@ a:hover {
 }
 
 .green {
-  color: #517955;
+  color: #1b4e20;
 }
 
 .light-green {
