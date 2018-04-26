@@ -1,48 +1,48 @@
 html {
-  font-family: "Yantramanav", sans-serif;
+  font-family: Yantramanav, sans-serif;
 }
 
 header, footer {
   background-color: #263437;
 }
 
-ul, footer, .white, label, .navigate a, .nav a{
-  color: #F5F2ED;
+ul, footer, .white, label, .navigate a, .nav a {
+  color: #f5f2ed;
   text-decoration: none;
 }
 
 a:hover {
-  color: #D0A330;
+  color: #d0a330;
 }
 
 .banner {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, .75);
   color: #517955;
 }
 
 .btn {
-  background-color: #D0A330;
-  border-color: #D0A330;
+  background-color: #d0a330;
+  border-color: #d0a330;
 }
 
 .btn:hover {
-  background-color: #6F9E74;
-  border-color: #6F9E74;
+  background-color: #6f9e74;
+  border-color: #6f9e74;
 }
 
 .btn-green {
-  background-color: #6F9E74;
-  border-color: #6F9E74;
+  background-color: #6f9e74;
+  border-color: #6f9e74;
 }
 
 .btn-green:hover {
-  background-color: #D4EBB7;
-  border-color: #D4EBB7;
-  color: #6F9E74;
+  background-color: #d4ebb7;
+  border-color: #d4ebb7;
+  color: #6f9e74;
 }
 
 .brown {
-  background-color: #F5F2ED;
+  background-color: #f5f2ed;
   border-radius: 15px;
 }
 
@@ -51,12 +51,12 @@ a:hover {
 }
 
 .light-green {
-  background-color: #D4EBB7;
+  background-color: #d4ebb7;
   border-radius: 15px;
 }
 
 .blue {
-color:#263437;
+  color: #263437;
 }
 
 .width {
@@ -98,6 +98,7 @@ header [type="checkbox"] + label::before {
   .nav-check:checked ~ .nav {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 50em) {
@@ -112,9 +113,5 @@ header [type="checkbox"] + label::before {
   .contact {
     background-color: transparent;
   }
-}
-
-@media only screen and (min-width: 60em) {
-
 
 }

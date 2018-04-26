@@ -11,19 +11,16 @@
   <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
 </head>
 <body>
-  <header class="grid grid-middle pad-t-1-2">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header class="grid grid-middle pad-t-1-2" role="banner">
     <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4">
-      <a href="index.html" class="current"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex"></a>
+      <a href="index.html" class="current"><img class="gutter-1-2 text-upper push-1-2 img-flex" src="images/title.png" alt="close navigation"></a>
     </div>
-    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4">
-      <ul class="list-group-inline">
-        <li><a href="tour.html" class="text-upper push gutter-1-2">platform</a></li>
-        <li><a href="pricing.html" class="text-upper push gutter-1-2">pricing</a></li>
-        <li><a href="index.html" class="text-upper push gutter-1-2">about</a></li>
-        <li><a href="sign-up.html" class="btn btn-green text-upper gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
-      </ul>
-    </nav>
-    <input type="checkbox" id="nav-check" class="nav-check">
+    <input type="checkbox" id="nav-check" class="nav-check unit xs-0">
     <label class="nav-label unit xs-1-2 s-1-2 m-0 l-0 text-right island-1-2 push-1-2" for="nav-check">
       <i class="icon i-32">
         <img class="nav-open img-flex" src="images/nav-icon.svg" alt="open navigation">
@@ -37,16 +34,24 @@
         <li class="pad-t-1-2 pad-b-1-2"><a href="sign-up.html" class="text-upper push gutter-1-2">about</a></li>
       </ul>
     </nav>
+    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4" role="navigation" id="nav">
+      <ul class="list-group-inline">
+        <li><a href="tour.html" class="text-upper push gutter-1-2">platform</a></li>
+        <li><a href="pricing.html" class="text-upper push gutter-1-2">pricing</a></li>
+        <li><a href="#about" class="text-upper push gutter-1-2">about</a></li>
+        <li><a href="sign-up.html" class="btn btn-green text-upper gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="island-1-2">
+  <main class="island-1-2" role="main" id="main">
     <section class="island-1-2">
       <div class="grid relative">
         <div class="unit xs-1 s-1 m-1 l-1 xl-1 embed embed-24by10">
           <img class="embed-item img-flex" src="images/field.jpg" alt="feilds">
         </div>
         <div class="banner island unit header-float xs-1 s-1 m-1 l-1-2 xl-1-2 text-center">
-          <h1 class="yotta push-1-2 text-upper">get growing</h2>
+          <h1 class="yotta push-1-2 text-upper">get growing</h1>
           <p>Start expanding your marketing platform for your business today.</p>
           <a href="sign-up.html" class="btn bold text-upper">free</a>
         </div>
@@ -57,16 +62,16 @@
         <div class="unit-content-distribute content-fill green unit-content-distribute brown text-center unit xs-1 s-1 m-1 l-1 gutter-1-2 pad-b-1-2">
           <h2 class="pad-t-1-2 content-fill text-upper">our services</h2>
           <p class=" content-fill">At Adverte, we provide a four level platform that collects data from customers, analyzes it, create sutable advertising and repot on the results of that advertizing.</p>
-          <img src="images/arrow.png" class="img-flex content-fill" alt="feilds">
+          <img src="images/arrow.png" class="img-flex content-fill" alt="arrow">
           <div>
             <a href="tour.html" class="btn text-upper bold">read more</a>
           </div>
         </div>
       </div>
-      <div class="unit unit-content-distribute xs-1 s-1 m-1-2 l-1-2 gutter-1-2 push-1-2 pad-t-1-2">
+      <div class="unit unit-content-distribute xs-1 s-1 m-1-2 l-1-2 gutter-1-2 push-1-2 pad-t-1-2" id="about">
         <div class="unit-content-distribute content-fill green brown text-center gutter-1-2 pad-b-1-2">
           <h2 class="pad-t-1-2 text-upper">about us</h2>
-          <p class="content-fill">We’re recognized by Google to have the highest level of experience and proficiency in developing,launching, and managing Adverte campaigns for local merchants and small businesses. Being a Google Premier Partner, we receive extensive product training, tools, saving you time and resources.</p>
+          <p class="content-fill">We’re recognized by Google to have the highest level of experience and proficiency in developing, launching, and managing Adverte campaigns for local merchants and small businesses. Being a Google Premier Partner, we receive extensive product training, tools, saving you time and resources.</p>
           <div>
             <a href="index.html" class="btn text-upper bold">more info</a>
           </div>
@@ -86,35 +91,35 @@
       </div>
     </section>
   </main>
-  <footer class="grid">
+  <footer class="grid" role="contentinfo">
     <nav class="unit xs-1 s-1 m-1 l-1 text-center pad-t">
       <ul class="list-group-inline">
         <li>
           <i class="icon i-48">
-            <img class=" img-flex" src="images/facebook-square.svg" alt="">
+            <img class=" img-flex" src="images/facebook-square.svg" alt="facebook logo">
           </i>
         </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/google-plus-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/google-plus-square.svg" alt="google plus logo">
+          </i>
+        </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/tumblr-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/tumblr-square.svg" alt="tumblr logo">
+          </i>
+        </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/twitter-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/twitter-square.svg" alt="twitter logo">
+          </i>
+        </li>
       </ul>
     </nav>
     <div class="unit xs-1 s-1 m-1 text-center">
       <p class="push-0">221 Baker Street London, Ontario K0A 1D2</p>
       <p class="push-0">advertadvertising@hotmail.com</p>
-      <p class="">613-222-2222</p>
+      <p>613-222-2222</p>
     </div>
     <div class="unit xs-1 s-1 m-1 text-center push-2">
       <p class="push-0">Sponsors:</p>
@@ -122,10 +127,10 @@
       <p class="push-0">Wordstream Online Advertizing</p>
     </div>
     <div class="unit xs-1 s-1 m-0 l-0 text-center">
-      <img src="images/title.png" class="text-upper push-1-2 img-flex width ib">
+      <img src="images/title.png" class="text-upper push-1-2 img-flex width ib" alt="logo">
     </div>
     <div class="unit xs-0 s-0 m-1-4 l-1-4">
-      <a href="index.html"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex"></a>
+      <a href="index.html"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex" alt="logo"></a>
     </div>
     <nav class="unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4">
       <ul class="navigate list-group-inline">
