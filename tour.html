@@ -11,18 +11,14 @@
   <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,700" rel="stylesheet">
 </head>
 <body>
-  <header class="grid grid-middle pad-t-1-2">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+  <header class="grid grid-middle pad-t-1-2" role="banner">
     <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4">
-      <a href="index.html"><img src="images/title.png"class="gutter-1-2 text-upper push-1-2 img-flex" alt="logo"></a>
+      <a href="index.html"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex" alt="logo"></a>
     </div>
-    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4">
-      <ul class="list-group-inline">
-        <li><a href="tour.html" class="current text-upper push gutter-1-2">platform</a></li>
-        <li><a href="pricing.html" class="text-upper push gutter-1-2">pricing</a></li>
-        <li><a href="index.html" class="text-upper push gutter-1-2">about</a></li>
-        <li><a href="sign-up.html" class="btn btn-green text-upper gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
-      </ul>
-    </nav>
     <input type="checkbox" id="nav-check" class="nav-check unit xs-0">
     <label class="nav-label unit xs-1-2 s-1-2 m-0 l-0 text-right island-1-2 push-1-2" for="nav-check">
       <i class="icon i-32">
@@ -37,19 +33,39 @@
         <li class="pad-t-1-2 pad-b-1-2"><a href="sign-up.html" class="text-upper push gutter-1-2">about</a></li>
       </ul>
     </nav>
+    <nav class="navigate unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4" role="navigation">
+      <ul class="list-group-inline">
+        <li><a href="tour.html" class="current text-upper push gutter-1-2">platform</a></li>
+        <li><a href="pricing.html" class="text-upper push gutter-1-2">pricing</a></li>
+        <li><a href="index.html" class="text-upper push gutter-1-2">about</a></li>
+        <li><a href="sign-up.html" class="btn btn-green text-upper gutter-1-4 push-r-1-2 pad-t-1-8 pad-b-1-8">sign up</a></li>
+      </ul>
+    </nav>
   </header>
-  <main class="island green">
+  <main class="island green" role="main">
+    <section class="push">
+      <div class="grid relative">
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1 embed embed-24by10">
+          <img class="embed-item img-flex" src="images/field.jpg" alt="feilds">
+        </div>
+        <div class="banner island unit header-float xs-1 s-1 m-1 l-1-2 xl-1-2 text-center">
+          <h1 class="yotta push-1-2 text-upper">get growing</h1>
+          <p>Start expanding your marketing platform for your business today.</p>
+          <a href="sign-up.html" class="btn bold text-upper">free</a>
+        </div>
+      </div>
+    </section>
     <div class="brown push">
-      <h1 class="yotta text-upper text-center pad-t gutter">get started</h1>
+      <h2 class="yotta text-upper text-center pad-t gutter">get started</h2>
       <p class="text-center gutter-2">Growing your business online has never been easier, faster, or more scalable. Supercharge your marketing efforts with the four step Adverte Growth Platform.</p>
       <img src="images/arrow.png" class="img-flex content-fill push gutter-1-2" alt="arrow">
       <div class="grid grid-stretch gutter-1-2">
         <div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-4 text-center unit-content-distribute push">
           <div class="light-green unit-content-distribute content-fill island-1-2">
             <img src="images/graph.svg" class="img-flex island-1-2" alt="graph illustration">
-            <h3 class="peta text-upper push-0">market analysis</h3>
+            <h2 class="peta text-upper push-0">market analysis</h2>
             <p>You’re sitting on a gold mine of customer data. Sync what you know and we’ll fill in the gaps around how shoppers browse, and their interests, shopping history, devices, and more.</p>
-        </div>
+          </div>
         </div>
         <div class="gutter-1-2 unit xs-1 s-1 m-1-2 l-1-4 text-center unit-content-distribute push">
           <div class="light-green unit-content-distribute content-fill island-1-2">
@@ -106,14 +122,13 @@
           </div>
         </div>
         <div class="unit xs-1 s-1 m-1 l-1 text-center">
-          <a href="sign-up.html"class="btn bold text-upper push">sign up</a>
+          <a href="sign-up.html" class="btn bold text-upper push">sign up</a>
         </div>
       </div>
     </div>
-
     <section class="pad-t-2 pad-b-2 gutter-1-2 text-center">
       <div class="wrapper">
-        <h1 class="text-upper">Plan options</h1>
+        <h2 class="text-upper">Plan options</h2>
         <div class="table-wrapper scrollable">
           <table class="push-0">
             <caption class="mega text-center">These services and benefits come with the different levels of our platform that you can choose from.</caption>
@@ -150,7 +165,7 @@
     </section>
   </main>
 
-  <footer class="grid">
+  <footer class="grid" role="contentinfo">
     <nav class="unit xs-1 s-1 m-1 l-1 text-center pad-t">
       <ul class="list-group-inline">
         <li>
@@ -160,25 +175,25 @@
         </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/google-plus-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/google-plus-square.svg" alt="feilds">
+          </i>
+        </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/tumblr-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/tumblr-square.svg" alt="feilds">
+          </i>
+        </li>
         <li>
           <i class="icon i-48">
-          <img class=" img-flex" src="images/twitter-square.svg" alt="feilds">
-        </i>
-      </li>
+            <img class=" img-flex" src="images/twitter-square.svg" alt="feilds">
+          </i>
+        </li>
       </ul>
     </nav>
     <div class="unit xs-1 s-1 m-1 text-center">
       <p class="push-0">221 Baker Street London, Ontario K0A 1D2</p>
       <p class="push-0">advertadvertising@hotmail.com</p>
-      <p class="">613-222-2222</p>
+      <p>613-222-2222</p>
     </div>
     <div class="unit xs-1 s-1 m-1 text-center push-2">
       <p class="push-0">Sponsors:</p>
@@ -186,10 +201,10 @@
       <p class="push-0">Wordstream Online Advertizing</p>
     </div>
     <div class="unit xs-1 s-1 m-0 l-0 text-center">
-      <img src="images/title.png" class="text-upper push-1-2 img-flex width ib">
+      <img src="images/title.png" class="text-upper push-1-2 img-flex width ib" alt="logo">
     </div>
     <div class="unit xs-0 s-0 m-1-4 l-1-4">
-      <a href="index.html"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex"></a>
+      <a href="index.html"><img src="images/title.png" class="gutter-1-2 text-upper push-1-2 img-flex" alt="logo"></a>
     </div>
     <nav class="unit xs-0 s-0 m-3-4 l-3-4 text-right pad-t-1-4">
       <ul class="navigate list-group-inline">
