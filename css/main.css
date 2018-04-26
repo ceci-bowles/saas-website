@@ -6,8 +6,9 @@ header, footer {
   background-color: #263437;
 }
 
-ul, footer {
+ul, footer, .white, label, .navigate a, .nav a{
   color: #F5F2ED;
+  text-decoration: none;
 }
 
 a:hover {
@@ -24,13 +25,20 @@ a:hover {
   border-color: #D0A330;
 }
 
+.btn:hover {
+  background-color: #6F9E74;
+  border-color: #6F9E74;
+}
+
 .btn-green {
   background-color: #6F9E74;
   border-color: #6F9E74;
 }
 
 .btn-green:hover {
-
+  background-color: #D4EBB7;
+  border-color: #D4EBB7;
+  color: #6F9E74;
 }
 
 .brown {
@@ -47,11 +55,52 @@ a:hover {
   border-radius: 15px;
 }
 
+.blue {
+color:#263437;
+}
+
 .width {
   max-width: 15rem;
 }
 
+.nav {
+  display: none;
+}
+
+header [type="checkbox"] + label::before {
+  top: -10em;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+  border-top: 2px solid #fff;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.contact {
+  background-color: #263437;
+}
+
 @media only screen and (min-width: 38em) {
+
+  header [type="checkbox"] + label,
+  .nav-check:checked ~ .nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 50em) {
 
   .header-float {
     position: absolute;
@@ -59,4 +108,13 @@ a:hover {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .contact {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+
 }
